@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('file:/C:/Users/Asus/OneDrive/IT/programing/java/faculty/BankProjectTest/src/main/resources/pictures/atm.png');" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.MenuViewController">
+   <children>
+      <VBox layoutX="159.0" layoutY="22.0" prefHeight="311.0" prefWidth="291.0" style="-fx-border-color: #1f1e1c;">
+         <children>
+            <Label alignment="CENTER" prefHeight="35.0" prefWidth="315.0" style="-fx-background-color: #ccad76; -fx-border-color: #1f1e1c;" text="MENU">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#addAccountOnAction" prefHeight="25.0" prefWidth="369.0" text="dodaj konto">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#depositOnAction" prefHeight="25.0" prefWidth="348.0" text="wpłać">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#withdrawOnAction" prefHeight="25.0" prefWidth="331.0" text="wypłać">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#transferOnAction" prefHeight="25.0" prefWidth="371.0" text="transfer">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#exitOnAction" prefHeight="38.0" prefWidth="328.0" text="wyjdź">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Button layoutX="520.0" layoutY="361.0" mnemonicParsing="false" onAction="#taxOfficeOnAction" text="TaxOffice" />
+   </children>
+</Pane>

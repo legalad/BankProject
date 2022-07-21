@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="600.0" style="-fx-background-color: #696362;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.DepositViewController">
+    <children>
+        <Pane layoutX="117.0" layoutY="-2.0" prefHeight="404.0" prefWidth="370.0" style="-fx-background-color: #ede9e1; -fx-border-color: #1f1e1c;">
+            <Button layoutX="119.0" layoutY="130.0" mnemonicParsing="false" onAction="#depositOnAction" prefHeight="25.0" prefWidth="149.0" text="wpłać" />
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="370.0" style="-fx-background-color: #ccad76; -fx-border-color: #1f1e1c;" text="  WPŁATA ŚRODKÓW">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Label>
+            <TextField fx:id="accountNrTextField" layoutX="119.0" layoutY="60.0" />
+            <Label layoutX="62.0" layoutY="60.0" prefHeight="25.0" prefWidth="57.0" text="nr konta:">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Label>
+            <TextField fx:id="amountTextField" layoutX="119.0" layoutY="94.0" />
+            <Label layoutX="69.0" layoutY="94.0" prefHeight="25.0" prefWidth="43.0" text="kwota:">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Label>
+            <Button layoutX="111.0" layoutY="353.0" mnemonicParsing="false" onAction="#backToMenuOnAction" prefHeight="25.0" prefWidth="149.0" text="wróć" />
+            <TextArea fx:id="depositTextArea" layoutX="22.0" layoutY="165.0" prefHeight="169.0" prefWidth="326.0" />
+        </Pane>
+    </children>
+</Pane>

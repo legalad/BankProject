@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #696362;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.AddAccountViewCotroller">
+   <children>
+      <Pane layoutX="117.0" layoutY="-2.0" prefHeight="400.0" prefWidth="370.0" style="-fx-background-color: #ede9e1; -fx-border-color: #1f1e1c;">
+         <children>
+            <Button layoutX="111.0" layoutY="162.0" mnemonicParsing="false" onAction="#addNewAccountOnAction" prefHeight="25.0" prefWidth="149.0" text="załóż konto" />
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="47.0" prefWidth="370.0" style="-fx-background-color: #ccad76; -fx-border-color: #1f1e1c;" text="DODAWANIE KONTA">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="58.0" prefHeight="25.0" prefWidth="36.0" text="imie:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTextField" layoutX="111.0" layoutY="58.0" />
+            <Label layoutX="48.0" layoutY="90.0" prefHeight="25.0" prefWidth="63.0" text="nazwisko:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="surnameTextField" layoutX="111.0" layoutY="90.0" />
+            <Label layoutX="67.0" layoutY="122.0" prefHeight="25.0" prefWidth="43.0" text="rodzaj:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ChoiceBox layoutX="110.0" layoutY="122.0" prefWidth="150.0" />
+            <TextArea fx:id="addAccountTextArea" layoutX="23.0" layoutY="204.0" prefHeight="131.0" prefWidth="323.0" />
+            <Button layoutX="112.0" layoutY="353.0" mnemonicParsing="false" onAction="#backToMenuOnAction" prefHeight="25.0" prefWidth="149.0" text="wróć" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
